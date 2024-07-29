@@ -402,22 +402,6 @@ h3 {
   font-size: 3.2rem;
 }
 
-.text_center {
-  text-align: center;
-}
-
-.bg-primario {
-  background-color: #5E311E;
-}
-
-.margin-negativo-10 {
-  margin-top: -10rem;
-}
-
-.bg-white {
-  background-color: #ffffff;
-}
-
 .header {
   padding: 5rem 0;
   position: relative;
@@ -810,4 +794,50 @@ h3 {
   width: 50%;
   height: 5px;
   background-color: #C39C63;
+}
+
+.contenido-menu {
+  background-image: url(../img/cafe.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+  aspect-ratio: 4/6;
+}
+@media (min-width: 768px) {
+  .contenido-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    aspect-ratio: 10/6;
+    background-size: 54%;
+    background-position: bottom right;
+  }
+}
+@media (min-width: 1024px) {
+  .contenido-menu {
+    aspect-ratio: 14/6;
+  }
+}
+.contenido-menu .texto p {
+  font-size: 2rem;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.bg-primario {
+  background-color: #5E311E;
+}
+
+.margin-negativo-10 {
+  margin-top: -10rem;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.padding-bottom-0 {
+  padding-bottom: 0;
 }
